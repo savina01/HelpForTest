@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace zad
 {
@@ -17,57 +18,37 @@ namespace zad
 
 
             Animal first = new Animal();
-            first.Name = "бозайник";
+            first.Name = "mammal";
             Animal second = new Animal();
-            second.Name = "влечуго";
+            second.Name = "reptile";
             Animal third = new Animal();
-            third.Name = "насекомо";
+            third.Name = "insect";
             Animal fourth = new Animal();
-            fourth.Name = "непознат";
+            fourth.Name = "unknown";
 
-            Console.WriteLine("Въведете животно:");
+            
+            Console.WriteLine("Animal:");
 
            string newAnimal= Console.ReadLine();
 
-            if(newAnimal=="куче")
+            if(newAnimal=="dog"||newAnimal=="cat"||newAnimal=="elephant")
             {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, first.Name);
+                Console.WriteLine("{0} is from class {1}", newAnimal, first.Name);
             }    
-            if(newAnimal=="котка")
+            
+            else if(newAnimal=="crocodile"||newAnimal=="turtle"||newAnimal=="snake")
             {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, first.Name);
+                Console.WriteLine("{0} is from class {1}", newAnimal, second.Name);
             }
-            if(newAnimal=="слон")
+            
+            else if (newAnimal=="spider"||newAnimal=="cocroach"||newAnimal=="wasp")
             {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, first.Name);
+                Console.WriteLine("{0} is from class {1}", newAnimal, third.Name);
             }    
-            if(newAnimal=="крокодил")
-            {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, second.Name);
-            }
-            if(newAnimal=="констенурка")
-            {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, second.Name);
-            }    
-            if(newAnimal=="змия")
-            {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, second.Name);
-            }
-            if (newAnimal=="паяк")
-            {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, third.Name);
-            }    
-            if (newAnimal=="хлебарка")
-            {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, third.Name);
-            }
-            if (newAnimal == "оса")
-            {
-                Console.WriteLine("{0} e oт клас {1}", newAnimal, third.Name);
-            }
+            
             else 
             {
-                Console.WriteLine("{0] е {1}", newAnimal, fourth.Name);
+                Console.WriteLine("{0] is {1}", newAnimal,fourth.Name);
             }
 
         }
