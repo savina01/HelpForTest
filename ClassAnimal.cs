@@ -5,7 +5,7 @@ namespace zad
 {
     class Animal
     {
-        public string Name;
+        public string Type;
 
         static void Main(string[]args)
         {
@@ -18,13 +18,13 @@ namespace zad
 
 
             Animal first = new Animal();
-            first.Name = "mammal";
+            first.Type = "mammal";
             Animal second = new Animal();
-            second.Name = "reptile";
+            second.Type = "reptile";
             Animal third = new Animal();
-            third.Name = "insect";
+            third.Type = "insect";
             Animal fourth = new Animal();
-            fourth.Name = "unknown";
+            fourth.Type = "unknown";
 
             
             Console.WriteLine("Animal:");
@@ -33,22 +33,22 @@ namespace zad
 
             if(newAnimal=="dog"||newAnimal=="cat"||newAnimal=="elephant")
             {
-                Console.WriteLine("{0} is from class {1}", newAnimal, first.Name);
+                Console.WriteLine("{0} is from class {1}", newAnimal, first.Type);
             }    
             
             else if(newAnimal=="crocodile"||newAnimal=="turtle"||newAnimal=="snake")
             {
-                Console.WriteLine("{0} is from class {1}", newAnimal, second.Name);
+                Console.WriteLine("{0} is from class {1}", newAnimal, second.Type);
             }
             
             else if (newAnimal=="spider"||newAnimal=="cocroach"||newAnimal=="wasp")
             {
-                Console.WriteLine("{0} is from class {1}", newAnimal, third.Name);
+                Console.WriteLine("{0} is from class {1}", newAnimal, third.Type);
             }    
             
             else 
             {
-                Console.WriteLine("{0] is {1}", newAnimal,fourth.Name);
+                Console.WriteLine("{0] is {1}", newAnimal,fourth.Type);
             }
 
         }
